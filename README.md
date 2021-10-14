@@ -15,5 +15,5 @@ Live Link: https://flightling.herokuapp.com/
 ![FLOW CHART](images/flowchart.png)
 
 ## Preview
-![](images/SS1.png)
-![](images/SS.png)
+![](images/ss1.PNG)
+![](images/ss.PNG)
