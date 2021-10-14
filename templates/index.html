@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000" />
+    <title>Flightling</title>
+    <link rel="stylesheet" type="text/css" href="https://firebasestorage.googleapis.com/v0/b/bikengo-b86b3.appspot.com/o/bootstrap.css?alt=media&token=7d0aa7be-c31a-495a-9eea-65bac56e0991" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css"/>
+    <link
+      rel="manifest"
+      href="_manifest.json"
+      da  ta-pwa-version="set_in_manifest_and_pwa_js"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://firebasestorage.googleapis.com/v0/b/bikengo-b86b3.appspot.com/o/logo.PNG?alt=media&token=07ff21fc-6876-419a-8cf7-b12769e70d1a"
+    />
+  </head>
+  <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+
+
+    <div id="page">
+      <div class="header header-fixed header-logo-center">
+      <br>
+      <center>
+        <a><img src ="https://firebasestorage.googleapis.com/v0/b/bikengo-b86b3.appspot.com/o/finallll.png?alt=media&token=63b9499d-0b8f-4eaa-8e7c-380a2fbb8bc9" height="60px"></a></center>
+        </div>
+
+    <br><br><br><br><br><br>
+
+<div id="page">
+      <div id="footer-bar" class="footer-bar-1">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <p style="text-align:center; color:#fff;">Made by Nandini Gupta | 40183034</p>
+       </div>
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Source</h5>
+                            <select name="Source" id="Source" required="required">
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Kolkata">Kolkata</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Chennai">Chennai</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Destination</h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" required="required">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Cochin">Cochin</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Kolkata">Kolkata</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+             <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Departure</h5>
+                            <!-- Departure -->
+                            <input type="datetime-local" name="Dep_Time" id="Dep_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrival</h5>
+                            <!-- Arrival -->
+                            <input type="datetime-local" name="Arrival_Time" id="Arrival_Time" required="required">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+<!--            <div class="row">-->
+<!--                <div class="col-sm-6">-->
+<!--                    <div class="card">-->
+<!--                        <div class="card-body">-->
+<!--                            &lt;!&ndash; Source &ndash;&gt;-->
+<!--                            <h5 class="card-title">Source</h5>-->
+<!--                            <select name="Source" id="Source" required="required">-->
+<!--                                <option value="Mumbai">Mumbai</option>-->
+<!--                                <option value="Kolkata">Kolkata</option>-->
+<!--                                <option value="Delhi">Delhi</option>-->
+<!--                                <option value="Chennai">Chennai</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-sm-6">-->
+<!--                    <div class="card">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Destination</h5>-->
+<!--                            &lt;!&ndash; Destination &ndash;&gt;-->
+<!--                            <select name="Destination" id="Destination" required="required">-->
+<!--                                <option value="Delhi">Delhi</option>-->
+<!--                                <option value="Cochin">Cochin</option>-->
+<!--                                <option value="Hyderabad">Hyderabad</option>-->
+<!--                                <option value="Kolkata">Kolkata</option>-->
+<!--                            </select>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Airline</h5>
+                            <!-- Airline -->
+                            <select name="airline" id="airline" required="required">
+                                <option value="Jet Airways">GoAir</option>
+                                <option value="IndiGo">Vistara</option>
+                                <option value="Vistara Premium economy">Vistara Premium economy</option>
+                                <option value="Air India">Air India</option>
+                                <option value="Multiple carriers">Multiple carriers</option>
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Vistara">Indigo</option>
+                                <option value="Trujet">Trujet</option>
+                                <option value="Air Asia">Air Asia</option>
+                                <option value="GoAir">Jet Airways</option>
+                                  <option value="Jet Airways Business">Jet Airways Business</option>
+                                <option value="Multiple carriers Premium economy">Multiple carriers Premium economy
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Stopage</h5>
+                            <!-- Total Stops -->
+                            <select name="stops" required="required">
+                                <option value="0">Non-Stop</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+<br>
+<br>
+
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <p>©2021 Nandini Gupta</p>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
